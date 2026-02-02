@@ -449,6 +449,21 @@
         "Andreas Fahr",
         "Martin Huber"
       ]
+    },
+    {
+      "id": "bibtex:Kim2026-wg",
+      "title": "FG's Research Radio: Digital Voter Suppression: How Microtargeting Undermines Elections",
+      "description": "AI-generated podcast discussion.\n\nReference:\nKim, Y. M., Dahlke, R., Song, H., & Heinrich, R. (2026). Targeted digital voter suppression efforts likely decrease voter turnout. https://doi.org/10.1073/pnas.2519944123",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Kim2026-wg.mp3",
+      "audio_size": 4019157,
+      "duration": 386,
+      "pub_date": "2026-02-02T07:14:22.112770+00:00",
+      "authors": [
+        "Young Mie Kim",
+        "Ross Dahlke",
+        "Hyebin Song",
+        "Richard Heinrich"
+      ]
     }
   ]
 }
