@@ -464,6 +464,20 @@
         "Hyebin Song",
         "Richard Heinrich"
       ]
+    },
+    {
+      "id": "bibtex:Hollingshead2026-vx",
+      "title": "FG's Research Radio: TikTok's Immigration Battle: Positive Vibes or Xenophobia?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nHollingshead, W., Gruzd, A., & Mai, P. (2026). Same platform, different stories: TikTok and the battle over immigration narratives. https://doi.org/10.17645/mac.11409",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hollingshead2026-vx.mp3",
+      "audio_size": 4014453,
+      "duration": 397,
+      "pub_date": "2026-02-03T14:55:58.200707+00:00",
+      "authors": [
+        "William Hollingshead",
+        "Anatoliy Gruzd",
+        "Philip Mai"
+      ]
     }
   ]
 }
