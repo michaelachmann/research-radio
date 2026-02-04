@@ -478,6 +478,20 @@
         "Anatoliy Gruzd",
         "Philip Mai"
       ]
+    },
+    {
+      "id": "bibtex:Elfes2026-jb",
+      "title": "FG's Research Radio: Narrative Warfare: How Stories Fuel Online Polarization",
+      "description": "AI-generated podcast discussion.\n\nReference:\nElfes, J., Bastos, M., & Aiello, L. M. (2026). On narrative: The rhetorical mechanisms of online polarisation. http://arxiv.org/abs/2601.07398v1",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Elfes2026-jb.mp3",
+      "audio_size": 3801933,
+      "duration": 368,
+      "pub_date": "2026-02-04T15:54:28.079118+00:00",
+      "authors": [
+        "Jan Elfes",
+        "Marco Bastos",
+        "Luca Maria Aiello"
+      ]
     }
   ]
 }
