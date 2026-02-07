@@ -492,6 +492,20 @@
         "Marco Bastos",
         "Luca Maria Aiello"
       ]
+    },
+    {
+      "id": "bibtex:Bollenbacher2026-vz",
+      "title": "FG's Research Radio: Antivax Tweets: How Misinformation Fueled COVID Deaths",
+      "description": "AI-generated podcast discussion.\n\nReference:\nBollenbacher, J., Menczer, F., & Bryden, J. (2026). Effects of antivaccine tweets on COVID-19 vaccinations, cases, and deaths. https://doi.org/10.1140/epjds/s13688-025-00606-1",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Bollenbacher2026-vz.mp3",
+      "audio_size": 3414501,
+      "duration": 342,
+      "pub_date": "2026-02-07T04:45:07.022992+00:00",
+      "authors": [
+        "John Bollenbacher",
+        "Filippo Menczer",
+        "John Bryden"
+      ]
     }
   ]
 }
