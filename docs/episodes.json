@@ -506,6 +506,24 @@
         "Filippo Menczer",
         "John Bryden"
       ]
+    },
+    {
+      "id": "bibtex:Szabo2026-rd",
+      "title": "FG's Research Radio: Chatbots vs. Fake News: Inoculating Minds, One Conversation at a Time",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSzab\u00f3, D., Yang, C., Visuri, A., Oppenlaender, J., Sekar, B., Yatani, K., & Hosio, S. (2026). Conversational Inoculation to enhance resistance to misinformation. https://doi.org/10.1145/3772318.379095",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Szabo2026-rd.mp3",
+      "audio_size": 3659157,
+      "duration": 351,
+      "pub_date": "2026-02-08T19:33:41.802414+00:00",
+      "authors": [
+        "D\u00e1niel Szab\u00f3",
+        "Chi-Lan Yang",
+        "Aku Visuri",
+        "Jonas Oppenlaender",
+        "Bharathi Sekar",
+        "Koji Yatani",
+        "Simo Hosio"
+      ]
     }
   ]
 }
