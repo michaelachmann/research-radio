@@ -524,6 +524,22 @@
         "Koji Yatani",
         "Simo Hosio"
       ]
+    },
+    {
+      "id": "bibtex:van-der-Linden2026-jt",
+      "title": "FG's Research Radio: Prebunking: Can Short Videos Fight Social Media Lies?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nLinden, S. V. D., Louison-Lavoy, D., Blazer, N., Noble, N. S., & Roozenbeek, J. (2026). Prebunking misinformation techniques in social media feeds: Results from an Instagram field study. https://doi.org/10.37016/mr-2020-193",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/van-der-Linden2026-jt.mp3",
+      "audio_size": 3606885,
+      "duration": 346,
+      "pub_date": "2026-02-09T20:53:35.673080+00:00",
+      "authors": [
+        "Sander van der Linden",
+        "Debra Louison-Lavoy",
+        "Nicholas Blazer",
+        "Nancy S. Noble",
+        "Jon Roozenbeek"
+      ]
     }
   ]
 }
