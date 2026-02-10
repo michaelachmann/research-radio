@@ -540,6 +540,21 @@
         "Nancy S. Noble",
         "Jon Roozenbeek"
       ]
+    },
+    {
+      "id": "bibtex:Lyons2026-ca",
+      "title": "FG's Research Radio: Aging & Online Health: Misinformation's Hidden Target",
+      "description": "AI-generated podcast discussion.\n\nReference:\nLyons, B., King, A. J., Barter, R. L., & Kaphingst, K. A. (2026). Exposure to low-credibility online health content is limited and is concentrated among older adults. https://doi.org/10.1038/s43587-025-01059-x",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Lyons2026-ca.mp3",
+      "audio_size": 3534381,
+      "duration": 353,
+      "pub_date": "2026-02-10T20:56:32.713359+00:00",
+      "authors": [
+        "Benjamin Lyons",
+        "Andy J. King",
+        "Rebecca L. Barter",
+        "Kimberly A. Kaphingst"
+      ]
     }
   ]
 }
