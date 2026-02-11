@@ -555,6 +555,19 @@
         "Rebecca L. Barter",
         "Kimberly A. Kaphingst"
       ]
+    },
+    {
+      "id": "bibtex:Graham2026-fb",
+      "title": "FG's Research Radio: Reddit's Mushroom Bots: Humans, Memes, and Online Culture",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGraham, T. & Carlon, D. (2026). On the Internet no-one knows you\u2019re not a bot: \u2018Botting\u2019 on Reddit as participatory culture. https://doi.org/10.1177/14614448251409210",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Graham2026-fb.mp3",
+      "audio_size": 3431469,
+      "duration": 341,
+      "pub_date": "2026-02-11T21:44:41.617000+00:00",
+      "authors": [
+        "Timothy Graham",
+        "Dominique Carlon"
+      ]
     }
   ]
 }
