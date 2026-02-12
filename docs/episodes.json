@@ -568,6 +568,18 @@
         "Timothy Graham",
         "Dominique Carlon"
       ]
+    },
+    {
+      "id": "bibtex:Cazzamatta2026-lo",
+      "title": "FG's Research Radio: Meta's Fact-Checking Fiasco: Truth, Lies, and Free Speech",
+      "description": "AI-generated podcast discussion.\n\nReference:\nCazzamatta, R. (2026). From moderation to chaos: Meta\u2019s fact-checking and the battle over truth and free speech. https://doi.org/10.1177/14614448251413687",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Cazzamatta2026-lo.mp3",
+      "audio_size": 3742461,
+      "duration": 366,
+      "pub_date": "2026-02-12T22:41:47.131682+00:00",
+      "authors": [
+        "Regina Cazzamatta"
+      ]
     }
   ]
 }
