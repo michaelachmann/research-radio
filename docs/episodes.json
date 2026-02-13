@@ -580,6 +580,21 @@
       "authors": [
         "Regina Cazzamatta"
       ]
+    },
+    {
+      "id": "bibtex:Gillespie2026-aa",
+      "title": "FG's Research Radio: AI Red-Teaming: Whose Values, Whose Labor, Whose Harm?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGillespie, T., Shaw, R., Gray, M. L., & Suh, J. (2026). AI red-teaming is a sociotechnical problem. https://doi.org/10.1145/3731657",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Gillespie2026-aa.mp3",
+      "audio_size": 4239789,
+      "duration": 411,
+      "pub_date": "2026-02-13T23:40:07.396386+00:00",
+      "authors": [
+        "Tarleton Gillespie",
+        "Ryland Shaw",
+        "Mary L. Gray",
+        "Jina Suh"
+      ]
     }
   ]
 }
