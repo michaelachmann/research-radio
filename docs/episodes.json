@@ -640,6 +640,22 @@
         "Raffael Heiss",
         "Isabelle Freiling"
       ]
+    },
+    {
+      "id": "bibtex:Inacio-da-Silva2026-zf",
+      "title": "FG's Research Radio: Facebook Ads: Spotting Election Interference in Brazil",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSilva, M. I. D., Oliveira, L. D., Melo, P. O. V. D., Goga, O., & Benevenuto, F. (2026). Identifying potentially irregular electoral ads in Facebook during the Brazilian elections. https://doi.org/10.1145/3796545",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Inacio-da-Silva2026-zf.mp3",
+      "audio_size": 3311517,
+      "duration": 325,
+      "pub_date": "2026-02-17T06:09:53.512003+00:00",
+      "authors": [
+        "Marcio Inacio da Silva",
+        "Lucas de Oliveira",
+        "Pedro Olmo Vaz de Melo",
+        "Oana Goga",
+        "Fabr\u00edcio Benevenuto"
+      ]
     }
   ]
 }
