@@ -656,6 +656,20 @@
         "Oana Goga",
         "Fabr\u00edcio Benevenuto"
       ]
+    },
+    {
+      "id": "bibtex:Lieu2025-nl",
+      "title": "FG's Research Radio: Climate Misinformation: Why Some Lies Stick Better",
+      "description": "AI-generated podcast discussion.\n\nReference:\nLieu, R., Hayes, O. R., & Cook, J. (2025). Testing the impact of fallacies and contrarian claims in climate change misinformation. https://doi.org/10.1111/bjop.70049",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Lieu2025-nl.mp3",
+      "audio_size": 3722301,
+      "duration": 359,
+      "pub_date": "2026-02-18T06:12:53.206533+00:00",
+      "authors": [
+        "Renee Lieu",
+        "Oliver R. Hayes",
+        "John Cook"
+      ]
     }
   ]
 }
