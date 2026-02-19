@@ -670,6 +670,21 @@
         "Oliver R. Hayes",
         "John Cook"
       ]
+    },
+    {
+      "id": "bibtex:Gauthier2026-iq",
+      "title": "FG's Research Radio: X Algorithm: How Feeds Shift Political Views",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGauthier, G., Hodler, R., Widmer, P., & Zhuravskaya, E. (2026). The political effects of X\u2019s feed algorithm. https://doi.org/10.1038/s41586-026-10098-2",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Gauthier2026-iq.mp3",
+      "audio_size": 3512493,
+      "duration": 352,
+      "pub_date": "2026-02-19T07:58:00.790405+00:00",
+      "authors": [
+        "Germain Gauthier",
+        "Roland Hodler",
+        "Philine Widmer",
+        "Ekaterina Zhuravskaya"
+      ]
     }
   ]
 }
