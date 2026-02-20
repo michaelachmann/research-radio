@@ -685,6 +685,19 @@
         "Philine Widmer",
         "Ekaterina Zhuravskaya"
       ]
+    },
+    {
+      "id": "bibtex:Stanusch2026-ec",
+      "title": "FG's Research Radio: AI Industry's Imagined Futures: Whose Vision Prevails?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nStanusch, N. & Rogers, R. (2026). How AI is imagined by industry during the Sam Altman controversy. https://doi.org/10.31124/advance.174979411.18178682/v1",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Stanusch2026-ec.mp3",
+      "audio_size": 4148517,
+      "duration": 406,
+      "pub_date": "2026-02-20T08:54:54.785652+00:00",
+      "authors": [
+        "Natalia Stanusch",
+        "Richard Rogers"
+      ]
     }
   ]
 }
