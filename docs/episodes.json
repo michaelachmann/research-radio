@@ -698,6 +698,25 @@
         "Natalia Stanusch",
         "Richard Rogers"
       ]
+    },
+    {
+      "id": "bibtex:Balluff2026-if",
+      "title": "FG's Research Radio: LLMs: Are We Sacrificing Rigor for AI Magic?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nBalluff, P., Ho, J. C., Gruber, J. B., Palicki, S., Palmer, A., Rossi, L., Shklovski, I., & Chan, C. (2026). Newer, larger, better? A critique of the unreflective LLM adoption in communication research. https://doi.org/10.1080/10584609.2026.2618486",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Balluff2026-if.mp3",
+      "audio_size": 4039989,
+      "duration": 399,
+      "pub_date": "2026-02-21T09:39:50.310311+00:00",
+      "authors": [
+        "Paul Balluff",
+        "Justin Chun-ting Ho",
+        "Johannes B. Gruber",
+        "Sean Palicki",
+        "Alexis Palmer",
+        "Luca Rossi",
+        "Irina Shklovski",
+        "Chung-hong Chan"
+      ]
     }
   ]
 }
