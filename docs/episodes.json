@@ -717,6 +717,21 @@
         "Irina Shklovski",
         "Chung-hong Chan"
       ]
+    },
+    {
+      "id": "bibtex:Scalco2026-bd",
+      "title": "FG's Research Radio: Information Voids: Where Misinformation Thrives",
+      "description": "AI-generated podcast discussion.\n\nReference:\nScalco, I., Gesualdo, F., Cerqueti, R., & Cinelli, M. (2026). How to detect information voids using longitudinal data from social media and web searches. http://arxiv.org/abs/2602.15476v1",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Scalco2026-bd.mp3",
+      "audio_size": 3863589,
+      "duration": 383,
+      "pub_date": "2026-02-22T11:30:52.736603+00:00",
+      "authors": [
+        "Irene Scalco",
+        "Francesco Gesualdo",
+        "Roy Cerqueti",
+        "Matteo Cinelli"
+      ]
     }
   ]
 }
