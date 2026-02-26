@@ -732,6 +732,21 @@
         "Roy Cerqueti",
         "Matteo Cinelli"
       ]
+    },
+    {
+      "id": "bibtex:DeVerna2025-dl",
+      "title": "FG's Research Radio: AI Fact-Check Fail: The Bias & Context Crisis",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDeVerna, M. R., Yang, K., Yan, H. Y., & Menczer, F. (2025). Large language models require curated context for reliable political fact-checking -- even with reasoning and web search. http://arxiv.org/abs/2511.18749v1",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/DeVerna2025-dl.mp3",
+      "audio_size": 2752413,
+      "duration": 270,
+      "pub_date": "2026-02-26T06:06:04.740314+00:00",
+      "authors": [
+        "Matthew R. DeVerna",
+        "Kai-Cheng Yang",
+        "Harry Yaojun Yan",
+        "Filippo Menczer"
+      ]
     }
   ]
 }
