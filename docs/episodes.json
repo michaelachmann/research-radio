@@ -747,6 +747,20 @@
         "Harry Yaojun Yan",
         "Filippo Menczer"
       ]
+    },
+    {
+      "id": "bibtex:Ober2026-vd",
+      "title": "FG's Research Radio: AI & Human Insight: Analyzing Interviews the Smart Way",
+      "description": "AI-generated podcast discussion.\n\nReference:\nOber, T., Courey, K. A., & Flor, M. (2026). Integrating topic modeling and LLM prompt engineering into a human-driven approach to analyze interview transcripts. https://doi.org/10.5281/zenodo.18733521",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Ober2026-vd.mp3",
+      "audio_size": 3608805,
+      "duration": 360,
+      "pub_date": "2026-02-27T07:08:30.127354+00:00",
+      "authors": [
+        "Teresa Ober",
+        "Karyssa A. Courey",
+        "Michael Flor"
+      ]
     }
   ]
 }
