@@ -761,6 +761,18 @@
         "Karyssa A. Courey",
         "Michael Flor"
       ]
+    },
+    {
+      "id": "bibtex:Ferrara2026-io",
+      "title": "FG's Research Radio: ECHO: Breaking Down Walls to Find Communities",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFerrara, E. (2026). ECHO: Encoding Communities via High-order Operators. http://arxiv.org/abs/2602.22446v1",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Ferrara2026-io.mp3",
+      "audio_size": 3910701,
+      "duration": 384,
+      "pub_date": "2026-03-03T08:54:33.351197+00:00",
+      "authors": [
+        "Emilio Ferrara"
+      ]
     }
   ]
 }
