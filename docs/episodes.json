@@ -773,6 +773,19 @@
       "authors": [
         "Emilio Ferrara"
       ]
+    },
+    {
+      "id": "bibtex:DiGiuseppe2026-pu",
+      "title": "FG's Research Radio: LLMs: Can Political Bias Kill Persuasion?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDiGiuseppe, M. & Robison, J. (2026). Perceived political bias in LLMs reduces persuasive abilities. http://arxiv.org/abs/2602.18092v1",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/DiGiuseppe2026-pu.mp3",
+      "audio_size": 3251277,
+      "duration": 322,
+      "pub_date": "2026-03-05T22:42:07.721249+00:00",
+      "authors": [
+        "Matthew DiGiuseppe",
+        "Joshua Robison"
+      ]
     }
   ]
 }
