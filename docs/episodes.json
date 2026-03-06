@@ -786,6 +786,18 @@
         "Matthew DiGiuseppe",
         "Joshua Robison"
       ]
+    },
+    {
+      "id": "bibtex:Baym2026-tr",
+      "title": "FG's Research Radio: Social Media: It's Bad, Now What?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nNancy, B. (2026). It\u2019s Bad: What Now?. https://scholar.google.com/scholar?q=It%E2%80%99s%20Bad%3A%20What%20Now%3F",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Baym2026-tr.mp3",
+      "audio_size": 3794277,
+      "duration": 378,
+      "pub_date": "2026-03-06T23:36:13.263785+00:00",
+      "authors": [
+        "Baym, Nancy"
+      ]
     }
   ]
 }
