@@ -798,6 +798,22 @@
       "authors": [
         "Baym, Nancy"
       ]
+    },
+    {
+      "id": "bibtex:Hourigan2026-oc",
+      "title": "FG's Research Radio: Misinformation in the Wild: Beyond Politics and Headlines",
+      "description": "AI-generated podcast discussion.\n\nReference:\nHourigan, A., Thomson, T., Notley, T., Park, S., & Dezuanni, M. (2026). Everyday encounters with misinformation online: examining sources, topics and modes. https://doi.org/10.1080/1369118x.2026.2636132",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hourigan2026-oc.mp3",
+      "audio_size": 3541149,
+      "duration": 361,
+      "pub_date": "2026-03-08T02:45:58.189012+00:00",
+      "authors": [
+        "Aimee Hourigan",
+        "T.J. Thomson",
+        "Tanya Notley",
+        "Sora Park",
+        "Michael Dezuanni"
+      ]
     }
   ]
 }
