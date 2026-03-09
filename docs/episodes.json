@@ -814,6 +814,19 @@
         "Sora Park",
         "Michael Dezuanni"
       ]
+    },
+    {
+      "id": "bibtex:Farkas2026-lr",
+      "title": "FG's Research Radio: Fact-Checkers vs. Platforms: A Necessary Evil?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFarkas, J. & Bengtsson, M. (2026). Defending fact-checking partnerships with platform companies: \u2018We can&#x27;t fight alone against disinformation\u2019. https://doi.org/10.1177/02673231261422085",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Farkas2026-lr.mp3",
+      "audio_size": 3095973,
+      "duration": 291,
+      "pub_date": "2026-03-09T04:59:54.515748+00:00",
+      "authors": [
+        "Johan Farkas",
+        "Mette Bengtsson"
+      ]
     }
   ]
 }
