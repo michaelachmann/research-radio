@@ -842,6 +842,18 @@
         "Fredrik Bjerknes",
         "Carl-Gustav Lind\u00e9n"
       ]
+    },
+    {
+      "id": "bibtex:Shi2026-ko",
+      "title": "FG's Research Radio: Fact-Checkers vs. Platforms: A Necessary Evil?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nShi, Y. (2026). The Governance-Embedded Interactive Media Effect: the role of AI-generated disclosure in user credibility and engagement based on fact-checking videos on Chinese TikTok (Douyin). https://doi.org/10.1080/17544750.2026.2623075",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Shi2026-ko.mp3",
+      "audio_size": 3808581,
+      "duration": 376,
+      "pub_date": "2026-03-11T05:57:55.249276+00:00",
+      "authors": [
+        "Yiru Shi"
+      ]
     }
   ]
 }
