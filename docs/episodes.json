@@ -854,6 +854,27 @@
       "authors": [
         "Yiru Shi"
       ]
+    },
+    {
+      "id": "bibtex:Hackenburg2025-dj",
+      "title": "FG's Research Radio: AI Persuasion: Facts, Lies, and Political Influence",
+      "description": "AI-generated podcast discussion.\n\nReference:\nHackenburg, K., Tappin, B. M., Hewitt, L., Saunders, E., Black, S., Lin, H., Fist, C., Margetts, H., Rand, D. G., & Summerfield, C. (2025). The levers of political persuasion with conversational artificial intelligence. https://doi.org/10.1126/science.aea3884",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hackenburg2025-dj.mp3",
+      "audio_size": 3510501,
+      "duration": 343,
+      "pub_date": "2026-03-12T07:09:53.706008+00:00",
+      "authors": [
+        "Kobi Hackenburg",
+        "Ben M. Tappin",
+        "Luke Hewitt",
+        "Ed Saunders",
+        "Sid Black",
+        "Hause Lin",
+        "Catherine Fist",
+        "Helen Margetts",
+        "David G. Rand",
+        "Christopher Summerfield"
+      ]
     }
   ]
 }
