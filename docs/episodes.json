@@ -893,6 +893,20 @@
         "Huseynova, Elnara",
         "Hatfield, Audrey"
       ]
+    },
+    {
+      "id": "bibtex:Rossini2026-jn",
+      "title": "FG's Research Radio: Misinformation: Fueling Intolerance in Brazil's Election",
+      "description": "AI-generated podcast discussion.\n\nReference:\nPatr\u00edcia, R., Antonis, K., & Camila, M. (2026). Amplifying division: Electoral misinformation and political intolerance in Brazil. https://scholar.google.com/scholar?q=Amplifying%20division%3A%20Electoral%20misinformation%20and%20political%20intolerance%20in%20Brazil",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Rossini2026-jn.mp3",
+      "audio_size": 4228821,
+      "duration": 414,
+      "pub_date": "2026-03-14T09:43:33.161492+00:00",
+      "authors": [
+        "Rossini, Patr\u00edcia",
+        "Kalogeropoulos, Antonis",
+        "Mont'Alverne, Camila"
+      ]
     }
   ]
 }
