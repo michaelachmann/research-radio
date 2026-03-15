@@ -907,6 +907,23 @@
         "Kalogeropoulos, Antonis",
         "Mont'Alverne, Camila"
       ]
+    },
+    {
+      "id": "bibtex:Lee2026-je",
+      "title": "FG's Research Radio: AI Knows Your Politics: Are Online Posts Revealing Too Much?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nLee, B., Kim, S., Menczer, F., Ahn, Y., Kwak, H., & An, J. (2026). LLMs can infer political alignment from online conversations. http://arxiv.org/abs/2603.11253v1",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Lee2026-je.mp3",
+      "audio_size": 3538077,
+      "duration": 345,
+      "pub_date": "2026-03-15T10:41:52.941707+00:00",
+      "authors": [
+        "Byunghwee Lee",
+        "Sangyeon Kim",
+        "Filippo Menczer",
+        "Yong-Yeol Ahn",
+        "Haewoon Kwak",
+        "Jisun An"
+      ]
     }
   ]
 }
