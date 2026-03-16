@@ -924,6 +924,22 @@
         "Haewoon Kwak",
         "Jisun An"
       ]
+    },
+    {
+      "id": "bibtex:Dehghan2026-sy",
+      "title": "FG's Research Radio: Reddit's Echo Chambers: Platform Design and Political Silos",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDehghan, E., Carlon, D., Kasianenko, K., Nagappa, A., & Suresh, V. P. (2026). The entangled dynamics leading to the sedimentation of polarisation on political Reddit. https://doi.org/10.1080/1369118x.2026.2623523",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Dehghan2026-sy.mp3",
+      "audio_size": 4264317,
+      "duration": 429,
+      "pub_date": "2026-03-16T11:03:35.020237+00:00",
+      "authors": [
+        "Ehsan Dehghan",
+        "Dominique Carlon",
+        "Kateryna Kasianenko",
+        "Ashwin Nagappa",
+        "Vish Padinjaredath Suresh"
+      ]
     }
   ]
 }
