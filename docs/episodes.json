@@ -940,6 +940,20 @@
         "Ashwin Nagappa",
         "Vish Padinjaredath Suresh"
       ]
+    },
+    {
+      "id": "bibtex:Yoo2026-ev",
+      "title": "FG's Research Radio: Weaponizing \"Fake News\": Truth Lost in Partisan Warfare",
+      "description": "AI-generated podcast discussion.\n\nReference:\nYoo, J. J., Lee, H., & An, S. (2026). The role of the term \u201cfake news\u201d in U.s. alternative media: Shaping political discourse and hyperpartisanship. https://doi.org/10.1177/10776990251410599",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Yoo2026-ev.mp3",
+      "audio_size": 3856317,
+      "duration": 380,
+      "pub_date": "2026-03-17T11:52:45.389445+00:00",
+      "authors": [
+        "Joseph J. Yoo",
+        "Hannah Lee",
+        "Soontae An"
+      ]
     }
   ]
 }
