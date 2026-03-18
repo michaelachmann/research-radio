@@ -954,6 +954,19 @@
         "Hannah Lee",
         "Soontae An"
       ]
+    },
+    {
+      "id": "bibtex:Bouchaud2026-lr",
+      "title": "FG's Research Radio: X's Political Algorithm: Profiling Users Without Consent?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nBouchaud, P. & Ramaciotti, P. (2026). Recommender system in X inadvertently profiles ideological positions of users. http://arxiv.org/abs/2602.02624v1",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Bouchaud2026-lr.mp3",
+      "audio_size": 3795069,
+      "duration": 368,
+      "pub_date": "2026-03-18T15:26:41.229279+00:00",
+      "authors": [
+        "Paul Bouchaud",
+        "Pedro Ramaciotti"
+      ]
     }
   ]
 }
