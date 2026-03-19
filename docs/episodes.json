@@ -967,6 +967,23 @@
         "Paul Bouchaud",
         "Pedro Ramaciotti"
       ]
+    },
+    {
+      "id": "bibtex:Stagnaro2025-pz",
+      "title": "FG's Research Radio: Online Samples: Are Your Participants Paying Attention?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nStagnaro, M. N., Druckman, J., Berinsky, A. J., Arechar, A. A., Willer, R., & Rand, D. G. (2025). Representativeness and response validity across nine opt-in online samples. https://doi.org/10.31234/osf.io/h9j2d",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Stagnaro2025-pz.mp3",
+      "audio_size": 3852981,
+      "duration": 377,
+      "pub_date": "2026-03-19T19:10:32.287197+00:00",
+      "authors": [
+        "Michael Nicholas Stagnaro",
+        "James Druckman",
+        "Adam J. Berinsky",
+        "Antonio Alonso Arechar",
+        "Robb Willer",
+        "David Gertler Rand"
+      ]
     }
   ]
 }
