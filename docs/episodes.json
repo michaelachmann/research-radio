@@ -984,6 +984,20 @@
         "Robb Willer",
         "David Gertler Rand"
       ]
+    },
+    {
+      "id": "bibtex:Wang2026-ub",
+      "title": "FG's Research Radio: Academic Twitter's Exodus: Why the Migration Failed",
+      "description": "AI-generated podcast discussion.\n\nReference:\nWang, X., Koneru, S., & Rajtmajer, S. (2024). The failed migration of academic Twitter: A case study of precocious adopters. http://arxiv.org/abs/2406.04005v3",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Wang2026-ub.mp3",
+      "audio_size": 3731709,
+      "duration": 361,
+      "pub_date": "2026-03-22T08:45:23.790367+00:00",
+      "authors": [
+        "Xinyu Wang",
+        "Sai Koneru",
+        "Sarah Rajtmajer"
+      ]
     }
   ]
 }
