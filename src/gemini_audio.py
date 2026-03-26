@@ -5,6 +5,7 @@ Uses Gemini to generate a conversation script, then Gemini TTS for multi-speaker
 """
 
 import os
+import random
 import wave
 import subprocess
 from typing import Optional
@@ -48,6 +49,11 @@ class GeminiAudioGenerator:
         host_name = self.VOICES.get('host', 'Kore')
         cohost_name = self.VOICES.get('cohost', 'Charon')
 
+        # ~5% chance of including self-aware AI humor in this episode
+        ai_humor_guideline = ""
+        if random.random() < 0.05:
+            ai_humor_guideline = "\n- Include one or two brief, self-aware jokes about being AI-generated hosts — e.g., a playful quip about mispronunciations, audio glitches, or the quirks of AI-generated podcasts. Keep it light, natural, and don't overdo it."
+
         prompt = f"""You are a podcast script writer. Create an engaging episode of "FG's Research Radio",
 a podcast featuring deep dive discussions on recent academic papers in computational social science,
 platform studies, misinformation research, and the evolving landscape of social media and AI.
@@ -67,7 +73,7 @@ Guidelines:
 - Discuss implications and significance for the field
 - End with takeaways for the audience
 - At the very end, the host should remind listeners that if they want to read the full paper, they can find the complete reference in the episode description, and encourage them to subscribe on Spotify and Apple Podcasts
-- Use natural, conversational language
+- Use natural, conversational language{ai_humor_guideline}
 - Target length: 8-12 minutes of dialogue (roughly 1200-1800 words)
 - Format each line exactly as "Host: [dialogue]" or "Cohost: [dialogue]"
 
