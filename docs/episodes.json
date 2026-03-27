@@ -1027,6 +1027,22 @@
         "Nataliia Bielova",
         "Cristiana Santos"
       ]
+    },
+    {
+      "id": "bibtex:Ventura2026-yc",
+      "title": "FG's Research Radio: Banned No More: How Platform Bans Backfire",
+      "description": "AI-generated podcast discussion.\n\nReference:\nVentura, T., Barrie, C., Roberts, M. E., Schwarz, C., & Tucker, J. A. (2026). The partisan effects of social media bans. https://doi.org/10.31235/osf.io/4stfw_v1",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Ventura2026-yc.mp3",
+      "audio_size": 3372717,
+      "duration": 332,
+      "pub_date": "2026-03-27T17:55:58.750455+00:00",
+      "authors": [
+        "Tiago Ventura",
+        "Christopher Barrie",
+        "Margaret E. Roberts",
+        "Christopher Schwarz",
+        "Joshua A Tucker"
+      ]
     }
   ]
 }
