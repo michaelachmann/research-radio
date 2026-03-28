@@ -1043,6 +1043,22 @@
         "Christopher Schwarz",
         "Joshua A Tucker"
       ]
+    },
+    {
+      "id": "bibtex:Dodds2026-df",
+      "title": "FG's Research Radio: AI Hype: How Journalism Fuels the Machine",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDodds, T., Mine, N., Helberger, N., Guzman, A. L., & Diakopoulos, N. (2026). AI hype in journalism: Visibility, power, and the politics of media narratives. https://doi.org/10.1080/21670811.2026.2630187",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Dodds2026-df.mp3",
+      "audio_size": 4449957,
+      "duration": 428,
+      "pub_date": "2026-03-28T18:55:09.055501+00:00",
+      "authors": [
+        "Tom\u00e1s Dodds",
+        "Naomi Mine",
+        "Natali Helberger",
+        "Andrea L. Guzman",
+        "Nicholas Diakopoulos"
+      ]
     }
   ]
 }
