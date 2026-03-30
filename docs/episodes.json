@@ -1059,6 +1059,20 @@
         "Andrea L. Guzman",
         "Nicholas Diakopoulos"
       ]
+    },
+    {
+      "id": "bibtex:Karo2026-dn",
+      "title": "FG's Research Radio: TikTok Caliphate: Hiding Jihad in Plain Sight",
+      "description": "AI-generated podcast discussion.\n\nReference:\nKaro, G., Divon, T., & Hallinan, B. (2026). The TikTok caliphate: How jihadist supporters exploit algorithmic recommendations and evade content moderation. https://doi.org/10.1177/20563051251412167",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Karo2026-dn.mp3",
+      "audio_size": 4451373,
+      "duration": 429,
+      "pub_date": "2026-03-30T08:29:51.606586+00:00",
+      "authors": [
+        "Gilad Karo",
+        "Tom Divon",
+        "Blake Hallinan"
+      ]
     }
   ]
 }
