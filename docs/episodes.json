@@ -1073,6 +1073,20 @@
         "Tom Divon",
         "Blake Hallinan"
       ]
+    },
+    {
+      "id": "bibtex:Li2026-wq",
+      "title": "FG's Research Radio: US Election Deception: How Misinformation Reached Millions",
+      "description": "AI-generated podcast discussion.\n\nReference:\nLi, X., Lee, Y., & Kim, B. (2026). Does YouTube shape conspiracy mentality? A three-way interaction effect of partisan YouTube channel use, like-Minded discussion, and interest in politics. https://doi.org/10.1080/1369118x.2026.2653097",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Li2026-wq.mp3",
+      "audio_size": 3668709,
+      "duration": 356,
+      "pub_date": "2026-04-11T08:57:04.087129+00:00",
+      "authors": [
+        "Xiyue Li",
+        "Yunseung Lee",
+        "Bumsoo Kim"
+      ]
     }
   ]
 }
