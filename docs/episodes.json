@@ -1087,6 +1087,49 @@
         "Yunseung Lee",
         "Bumsoo Kim"
       ]
+    },
+    {
+      "id": "bibtex:Appel2026-qr",
+      "title": "FG's Research Radio: Deceptive Networks: Millions Reached, Who's Amplifying?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nAppel, R. E., Kim, Y. M., Pan, J., Xu, Y., Nimmo, B., Thomas, D. R., Allcott, H., Barber\u00e1, P., Brown, T., Crespo-Tenorio, A., Dimmery, D., Freelon, D., Gentzkow, M., Gonz\u00e1lez-Bail\u00f3n, S., Guess, A. M., Iyengar, S., Lazer, D., Malhotra, N., Moehler, D., Nyhan, B., Settle, J., Thorson, E., Tromble, R., Rivera, C. V., Wilkins, A., Wojcieszak, M., Xiong, B., Jonge, C. K. D., Franco, A., Mason, W., Stroud, N. J., & Tucker, J. A. (2026). How deceptive online networks reached millions in the US 2020 elections. https://doi.org/10.1038/s41562-026-02435-2",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Appel2026-qr.mp3",
+      "audio_size": 4033245,
+      "duration": 390,
+      "pub_date": "2026-04-12T09:57:41.624324+00:00",
+      "authors": [
+        "Ruth E. Appel",
+        "Young Mie Kim",
+        "Jennifer Pan",
+        "Yiqing Xu",
+        "Ben Nimmo",
+        "Daniel Robert Thomas",
+        "Hunt Allcott",
+        "Pablo Barber\u00e1",
+        "Taylor Brown",
+        "Adriana Crespo-Tenorio",
+        "Drew Dimmery",
+        "Deen Freelon",
+        "Matthew Gentzkow",
+        "Sandra Gonz\u00e1lez-Bail\u00f3n",
+        "Andrew M. Guess",
+        "Shanto Iyengar",
+        "David Lazer",
+        "Neil Malhotra",
+        "Devra Moehler",
+        "Brendan Nyhan",
+        "Jaime Settle",
+        "Emily Thorson",
+        "Rebekah Tromble",
+        "Carlos Velasco Rivera",
+        "Arjun Wilkins",
+        "Magdalena Wojcieszak",
+        "Beixian Xiong",
+        "Chad Kiewiet de Jonge",
+        "Annie Franco",
+        "Winter Mason",
+        "Natalie Jomini Stroud",
+        "Joshua A. Tucker"
+      ]
     }
   ]
 }
