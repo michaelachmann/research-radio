@@ -103,8 +103,15 @@ def get_mp3_files_from_releases() -> dict[str, dict]:
     """Fetch list of MP3 files from GitHub releases."""
     print("Fetching MP3 files from GitHub releases...")
     try:
-        response = requests.get(GITHUB_API_URL, timeout=30)
-        response.raise_for_status()
+        import time
+        for attempt in range(3):
+            response = requests.get(GITHUB_API_URL, timeout=30)
+            if response.status_code in (502, 503, 504) and attempt < 2:
+                print(f"  GitHub API returned {response.status_code}, retrying ({attempt + 1}/3)...")
+                time.sleep(5 * (attempt + 1))
+                continue
+            response.raise_for_status()
+            break
         data = response.json()
 
         mp3_files = {}
@@ -445,9 +452,6 @@ def main():
             print("\n⚠ --fix is not fully implemented yet.")
             print("  Please manually review and fix the issues above.")
 
-    # Exit with error code if issues found
-    if not args.dry_run:
-        result = validate()
         sys.exit(1 if result.has_issues else 0)
 
 

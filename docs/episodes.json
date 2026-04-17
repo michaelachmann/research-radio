@@ -1133,12 +1133,12 @@
     },
     {
       "id": "bibtex:Marwick2026-ss",
-      "title": "FG's Research Radio: Lost in Translation: Rebuilding the Old Internet's Intimacy",
+      "title": "FG's Research Radio: Longing for the Old Internet: Community Before Virality",
       "description": "AI-generated podcast discussion.\n\nReference:\nMarwick, A. E. (2026). Broken connections: Fieldnotes from the old internet. https://doi.org/10.1177/20563051261434796",
       "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Marwick2026-ss.mp3",
-      "audio_size": 3429837,
-      "duration": 345,
-      "pub_date": "2026-04-17T18:00:55.316250+00:00",
+      "audio_size": 3205629,
+      "duration": 317,
+      "pub_date": "2026-04-17T17:46:54.794800+00:00",
       "authors": [
         "Alice E. Marwick"
       ]
