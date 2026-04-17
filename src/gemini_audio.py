@@ -153,6 +153,10 @@ Generate the podcast script now:"""
             )
 
             # Extract audio data
+            if (not response.candidates
+                    or not response.candidates[0].content.parts
+                    or not response.candidates[0].content.parts[0].inline_data):
+                raise ValueError("Gemini returned no audio data in response")
             audio_data = response.candidates[0].content.parts[0].inline_data.data
 
             # Save as WAV first
@@ -294,7 +298,8 @@ Generate ONLY the episode title, nothing else. No quotes, no explanation, just t
                     file_path
                 ],
                 capture_output=True,
-                text=True
+                text=True,
+                timeout=30
             )
             return int(float(result.stdout.strip()))
         except Exception:

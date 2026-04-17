@@ -202,7 +202,7 @@ def create_episode_from_paper(
 ) -> Episode:
     """Create an Episode object from paper metadata."""
     if pub_date is None:
-        pub_date = datetime.now()
+        pub_date = datetime.now(timezone.utc)
 
     if paper_year is None:
         paper_year = str(pub_date.year)
