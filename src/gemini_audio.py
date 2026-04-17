@@ -6,12 +6,14 @@ Uses Gemini to generate a conversation script, then Gemini TTS for multi-speaker
 
 import os
 import random
-import wave
 import subprocess
+import time
 from typing import Optional
 from dataclasses import dataclass
 from google import genai
 from google.genai import types
+
+from config import GEMINI_SCRIPT_MODEL, GEMINI_TTS_MODEL
 
 
 @dataclass
@@ -30,13 +32,32 @@ class GeminiAudioGenerator:
         'cohost': 'Charon',  # Second host - analytical, curious
     }
 
-    # Model IDs
-    SCRIPT_MODEL = 'gemini-2.0-flash'  # For generating conversation
-    TTS_MODEL = 'gemini-2.5-flash-preview-tts'  # For multi-speaker audio
+    # Model IDs (defaults, overridden by config)
+    SCRIPT_MODEL = GEMINI_SCRIPT_MODEL
+    TTS_MODEL = GEMINI_TTS_MODEL
+
+    # Retry settings
+    MAX_RETRIES = 3
+    RETRY_BASE_DELAY = 2  # seconds
 
     def __init__(self, api_key: str):
         """Initialize with Gemini API key."""
         self.client = genai.Client(api_key=api_key)
+
+    def _generate_with_retry(self, **kwargs):
+        """Call generate_content with retry on transient errors."""
+        for attempt in range(self.MAX_RETRIES):
+            try:
+                return self.client.models.generate_content(**kwargs)
+            except Exception as e:
+                error_str = str(e)
+                is_transient = any(code in error_str for code in ['429', '500', '502', '503', '504', 'RESOURCE_EXHAUSTED'])
+                if is_transient and attempt < self.MAX_RETRIES - 1:
+                    delay = self.RETRY_BASE_DELAY * (2 ** attempt)
+                    print(f"  Retrying in {delay}s (attempt {attempt + 1}/{self.MAX_RETRIES}): {e}")
+                    time.sleep(delay)
+                    continue
+                raise
 
     def generate_script(self, paper_text: str, paper_title: str) -> Optional[str]:
         """
@@ -68,6 +89,7 @@ researchers found..." or "According to the authors...").
 
 Guidelines:
 - Start by welcoming listeners to Research Radio, have the hosts briefly introduce themselves by name, then introduce the paper's topic and authors
+- Mention the authors by name naturally in the conversation (e.g., "As Boyd argues..." or "The team led by Ferrara found...")
 - Explain the key findings and methodology in accessible terms
 - Have both hosts share insights and build on each other's points
 - Discuss implications and significance for the field
@@ -85,9 +107,13 @@ Paper Content:
 Generate the podcast script now:"""
 
         try:
-            response = self.client.models.generate_content(
+            response = self._generate_with_retry(
                 model=self.SCRIPT_MODEL,
                 contents=prompt,
+                config=types.GenerateContentConfig(
+                    temperature=0.7,
+                    max_output_tokens=8192,
+                ),
             )
             return response.text
         except Exception as e:
@@ -122,7 +148,7 @@ Generate the podcast script now:"""
 {script}"""
 
         try:
-            response = self.client.models.generate_content(
+            response = self._generate_with_retry(
                 model=self.TTS_MODEL,
                 contents=tts_prompt,
                 config=types.GenerateContentConfig(
@@ -159,13 +185,17 @@ Generate the podcast script now:"""
                 raise ValueError("Gemini returned no audio data in response")
             audio_data = response.candidates[0].content.parts[0].inline_data.data
 
-            # Save as WAV first
-            wav_path = output_path.replace('.mp3', '.wav')
-            self._save_wav(wav_path, audio_data)
-
-            # Convert to MP3
-            if output_path.endswith('.mp3'):
-                return self._convert_to_mp3(wav_path, output_path)
+            # Check response mime type — use direct write for MP3, convert for PCM
+            mime_type = response.candidates[0].content.parts[0].inline_data.mime_type
+            if mime_type and 'mp3' in mime_type:
+                with open(output_path, 'wb') as f:
+                    f.write(audio_data)
+            else:
+                # Fallback: save as WAV then convert to MP3
+                wav_path = output_path.replace('.mp3', '.wav')
+                self._save_wav(wav_path, audio_data)
+                if output_path.endswith('.mp3'):
+                    return self._convert_to_mp3(wav_path, output_path)
 
             return True
 
@@ -175,6 +205,7 @@ Generate the podcast script now:"""
 
     def _save_wav(self, path: str, pcm_data: bytes, rate: int = 24000):
         """Save raw PCM data as WAV file."""
+        import wave
         with wave.open(path, 'wb') as wf:
             wf.setnchannels(1)
             wf.setsampwidth(2)
@@ -193,7 +224,6 @@ Generate the podcast script now:"""
                 check=True,
                 capture_output=True
             )
-            # Clean up WAV file
             os.remove(wav_path)
             return True
         except subprocess.CalledProcessError as e:
@@ -231,9 +261,13 @@ Podcast transcript:
 Generate ONLY the episode title, nothing else. No quotes, no explanation, just the title itself."""
 
         try:
-            response = self.client.models.generate_content(
+            response = self._generate_with_retry(
                 model=self.SCRIPT_MODEL,
                 contents=prompt,
+                config=types.GenerateContentConfig(
+                    temperature=0.9,
+                    max_output_tokens=100,
+                ),
             )
             title = response.text.strip()
             # Remove any quotes that might have been added

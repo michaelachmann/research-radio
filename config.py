@@ -12,6 +12,8 @@ GOOGLE_DRIVE_FOLDER_ID = os.getenv(
 
 # Gemini API
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_SCRIPT_MODEL = os.getenv("GEMINI_SCRIPT_MODEL", "gemini-2.5-flash")
+GEMINI_TTS_MODEL = os.getenv("GEMINI_TTS_MODEL", "gemini-2.5-flash-preview-tts")
 
 # GitHub
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
