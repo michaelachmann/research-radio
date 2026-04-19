@@ -1154,6 +1154,18 @@
       "authors": [
         "danah boyd"
       ]
+    },
+    {
+      "id": "bibtex:Swartz2026-zb",
+      "title": "FG's Research Radio: The Scam Age:",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSwartz, L. (2026). Social media in the scam age. https://doi.org/10.1177/20563051261437922",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Swartz2026-zb.mp3",
+      "audio_size": 5553021,
+      "duration": 560,
+      "pub_date": "2026-04-19T20:50:04.869521+00:00",
+      "authors": [
+        "Lana Swartz"
+      ]
     }
   ]
 }
