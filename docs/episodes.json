@@ -1166,6 +1166,21 @@
       "authors": [
         "Lana Swartz"
       ]
+    },
+    {
+      "id": "bibtex:Marwick2026-qd",
+      "title": "FG's Research Radio: What We Lost:",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMarwick, A. E., Schnabel, E., McGregor, S., & Schmitt, C. (2026). Disinformation as cultural narrative: Conceptualizing disinformation as cross-platform, identity-affirming, cathartic stories. https://doi.org/10.1080/10584609.2026.2644198",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Marwick2026-qd.mp3",
+      "audio_size": 4993773,
+      "duration": 485,
+      "pub_date": "2026-04-20T20:59:36.185263+00:00",
+      "authors": [
+        "Alice E. Marwick",
+        "Elaine Schnabel",
+        "Shannon McGregor",
+        "Carolyn Schmitt"
+      ]
     }
   ]
 }
