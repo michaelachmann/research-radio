@@ -1181,6 +1181,22 @@
         "Shannon McGregor",
         "Carolyn Schmitt"
       ]
+    },
+    {
+      "id": "bibtex:Rothut2026-wt",
+      "title": "FG's Research Radio: Radicalization",
+      "description": "AI-generated podcast discussion.\n\nReference:\nRothut, S., Schulze, H., Hohner, J., Greipl, S., & Rieger, D. (2026). Radicalization and the internet: 25 years of (online) radicalization research. https://doi.org/10.1080/10714421.2026.2658935",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Rothut2026-wt.mp3",
+      "audio_size": 6775389,
+      "duration": 655,
+      "pub_date": "2026-04-23T15:22:48.804534+00:00",
+      "authors": [
+        "Sophia Rothut",
+        "Heidi Schulze",
+        "Julian Hohner",
+        "Simon Greipl",
+        "Diana Rieger"
+      ]
     }
   ]
 }
