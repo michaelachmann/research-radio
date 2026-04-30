@@ -1197,6 +1197,20 @@
         "Simon Greipl",
         "Diana Rieger"
       ]
+    },
+    {
+      "id": "bibtex:Achmann-Denkler2026-lx",
+      "title": "FG's Research Radio: AI Sees",
+      "description": "AI-generated podcast discussion.\n\nReference:\nAchmann-Denkler, M., Haim, M., & Wolff, C. (2026). Seeing candidates at scale: Multimodal LLMs for Visual Political Communication on Instagram. http://arxiv.org/abs/2604.19489v1",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Achmann-Denkler2026-lx.mp3",
+      "audio_size": 5930253,
+      "duration": 565,
+      "pub_date": "2026-04-30T09:24:44.543725+00:00",
+      "authors": [
+        "Michael Achmann-Denkler",
+        "Mario Haim",
+        "Christian Wolff"
+      ]
     }
   ]
 }
