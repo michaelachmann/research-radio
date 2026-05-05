@@ -1211,6 +1211,22 @@
         "Mario Haim",
         "Christian Wolff"
       ]
+    },
+    {
+      "id": "bibtex:Rothut2026-or",
+      "title": "FG's Research Radio: Protests:",
+      "description": "AI-generated podcast discussion.\n\nReference:\nRothut, S., Schulze, H., Rieger, D., Lechner, M., & Naderer, B. (2026). Protest movements and the mainstreaming of radical and extremist ideologies: the case of COVID-19 protests. https://doi.org/10.1080/1369118x.2026.2654668",
+      "audio_url": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Rothut2026-or.mp3",
+      "audio_size": 6456789,
+      "duration": 644,
+      "pub_date": "2026-05-05T18:19:27.945812+00:00",
+      "authors": [
+        "Sophia Rothut",
+        "Heidi Schulze",
+        "Diana Rieger",
+        "Maximilian Lechner",
+        "Brigitte Naderer"
+      ]
     }
   ]
 }
