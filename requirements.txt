@@ -1,7 +1,12 @@
-# Google APIs
-google-genai>=1.0.0          # Gemini API (new SDK for 2.0+)
-google-api-python-client>=2.100.0  # Google Drive API
-google-auth>=2.23.0          # Authentication
+# LLM
+anthropic>=0.40.0
+
+# TTS
+elevenlabs>=2.0.0
+
+# Google APIs (Drive only — Gemini removed)
+google-api-python-client>=2.100.0
+google-auth>=2.23.0
 
 # PDF processing
 pypdf>=3.17.0

@@ -57,14 +57,19 @@ jobs:
 
       - name: Run podcast generator
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL: "claude-sonnet-4-6"
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_HOST_VOICE_ID: ${{ secrets.ELEVENLABS_HOST_VOICE_ID }}
+          ELEVENLABS_COHOST_VOICE_ID: ${{ secrets.ELEVENLABS_COHOST_VOICE_ID }}
           GOOGLE_APPLICATION_CREDENTIALS: credentials/service-account.json
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPO: ${{ github.repository }}
+          ENABLED_ANALYZERS: "podcast,extraction,critical"
           PODCAST_TITLE: "Research Radio"
-          PODCAST_DESCRIPTION: "AI-generated deep dives into computational social science research. Papers curated by Fabio Giglietto, discussions produced by Google Gemini."
-          PODCAST_AUTHOR: "Fabio Giglietto & Gemini AI"
-          PODCAST_EMAIL: "fabio.giglietto+research-radio@gmail.com"
+          PODCAST_DESCRIPTION: "AI-generated deep dives into computational social science research."
+          PODCAST_AUTHOR: "Research Radio"
+          PODCAST_EMAIL: ""
           PODCAST_WEBSITE: "https://fabiogiglietto.github.io/research-radio"
         run: python src/main.py
 
@@ -86,6 +91,6 @@ jobs:
           # Pull latest changes to avoid conflicts
           git pull --rebase origin main || true
 
-          git add data/processed.json docs/episodes.json docs/feed.xml
+          git add data/processed.json docs/episodes.json docs/feed.xml docs/analyses/
           git diff --staged --quiet || git commit -m "Update podcast data [skip ci]"
           git push

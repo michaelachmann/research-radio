@@ -10,10 +10,17 @@ GOOGLE_DRIVE_FOLDER_ID = os.getenv(
     "1gluNDqRQkyqxa_WIASaaoNEItrDlETkn"  # PaperPile PDFs folder
 )
 
-# Gemini API
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-GEMINI_SCRIPT_MODEL = os.getenv("GEMINI_SCRIPT_MODEL", "gemini-2.5-flash")
-GEMINI_TTS_MODEL = os.getenv("GEMINI_TTS_MODEL", "gemini-2.5-flash-preview-tts")
+# Anthropic / Claude
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "claude-sonnet-4-6")
+
+# ElevenLabs TTS
+ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
+ELEVENLABS_HOST_VOICE_ID = os.getenv("ELEVENLABS_HOST_VOICE_ID", "")
+ELEVENLABS_COHOST_VOICE_ID = os.getenv("ELEVENLABS_COHOST_VOICE_ID", "")
+# Names used in the podcast script (displayed in dialogue, not voice IDs)
+TTS_HOST_NAME = os.getenv("TTS_HOST_NAME", "Alex")
+TTS_COHOST_NAME = os.getenv("TTS_COHOST_NAME", "Sam")
 
 # GitHub
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -44,7 +51,11 @@ CREDENTIALS_DIR = os.path.join(PROJECT_ROOT, "credentials")
 PROCESSED_FILE = os.path.join(DATA_DIR, "processed.json")
 EPISODES_FILE = os.path.join(DOCS_DIR, "episodes.json")
 FEED_FILE = os.path.join(DOCS_DIR, "feed.xml")
+ANALYSES_DIR = os.path.join(DOCS_DIR, "analyses")
 
-# Gemini TTS voices (options: Puck, Charon, Kore, Fenrir, Aoede)
-TTS_HOST_VOICE = os.getenv("TTS_HOST_VOICE", "Kore")
-TTS_COHOST_VOICE = os.getenv("TTS_COHOST_VOICE", "Charon")
+# Analyzer framework — comma-separated list of analyzers to run per paper
+ENABLED_ANALYZERS = [
+    a.strip()
+    for a in os.getenv("ENABLED_ANALYZERS", "podcast,extraction,critical").split(",")
+    if a.strip()
+]
