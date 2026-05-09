@@ -2,6 +2,8 @@
 
 An automated pipeline that converts academic papers into podcast episodes and structured analyses using AI. It fetches papers from a reading list, retrieves PDFs from Google Drive, generates conversational podcast scripts and structured academic analyses with Claude, and produces multi-speaker audio using ElevenLabs.
 
+> **Fork Notice:** This is a fork of [research-radio](https://github.com/fabiogiglietto/research-radio) by [Fabio Giglietto](https://github.com/fabiogiglietto). The original automated pipeline for converting academic papers into podcast episodes and structured analyses is entirely his work. This fork extends the project with local web interfaces for interactive podcast scripting and EPUB audiobook conversion.
+
 ## About This Project
 
 This repository contains the **code** for generating AI-powered podcast discussions and structured analyses of academic papers.
