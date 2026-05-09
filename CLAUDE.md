@@ -26,20 +26,35 @@ Feed (JSON) → Drive (PDF) → [Analyzers] → Outputs
 ```
 config.py                      — all config via .env / env vars
 src/
-  main.py                      — orchestrator
+  main.py                      — orchestrator (GitHub Actions pipeline)
   feed_parser.py               — Paper dataclass + feed fetching
   drive_client.py              — Google Drive PDF lookup/download
   claude_client.py             — Anthropic SDK wrapper (generate, generate_json)
   tts_elevenlabs.py            — ElevenLabs Text-to-Dialogue wrapper + chunking
+                                  concat_mp3s() — shared module-level MP3 concat helper
   feed_generator.py            — RSS feed + Episode dataclass
   github_uploader.py           — GitHub Release asset upload
-  pdf_extractor.py             — standalone PDF download/text extraction (unused in current flow)
+  pdf_extractor.py             — standalone PDF download/text extraction
   analyzers/
     __init__.py                — REGISTRY + load_analyzers()
     base.py                    — PaperAnalyzer ABC + AnalysisResult dataclass
     podcast.py                 — podcast episode analyzer
     extraction.py              — structured extraction analyzer
     critical.py                — critical review analyzer
+  webui/                       — local interactive web interfaces
+    shared.py                  — MODELS, job store, SSE event_gen() (shared by both apps)
+    podcast.py                 — Flask app: paper PDF → podcast script + audio (port 5000)
+    audiobook.py               — Flask app: EPUB → audiobook chapters + audio (port 5001)
+    static/
+      shared.css               — base layout, panels, buttons, pills (CSS custom props for theming)
+      shared.js                — utility functions + model/preset init (shared by both apps)
+      podcast.css              — indigo theme + turn cards, speaker badges
+      podcast.js               — upload, generate, TTS, cURL builder (two-voice dialogue)
+      audiobook.css            — purple theme + chapter list, batch, voice section
+      audiobook.js             — upload, chapter select, generate, batch, TTS, cURL builder
+    templates/
+      podcast.html             — podcast app HTML (Jinja2)
+      audiobook.html           — audiobook app HTML (Jinja2)
 data/
   processed.json               — paper IDs already processed (prevents re-runs)
 docs/
@@ -52,6 +67,13 @@ docs/
   check_papers.yml             — hourly GitHub Actions job
 scripts/
   validate_sync.py             — CI consistency check
+```
+
+## Running the Local Web Interfaces
+
+```bash
+python -m src.webui.podcast    # Paper → Podcast Script Lab  → http://localhost:5000
+python -m src.webui.audiobook  # EPUB  → Audiobook Studio    → http://localhost:5001
 ```
 
 ## Adding a New Analyzer

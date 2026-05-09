@@ -1,0 +1,9 @@
+/* Podcast app — indigo theme (shared.css defaults already use indigo, only add components) */
+
+/* ── Script turn rendering ── */
+.turn{padding:.45rem .6rem;border-radius:.4rem;border-left:3px solid transparent;font-size:.8rem;line-height:1.55}
+.turn-host{background:#f0f0ff;border-left-color:#6366f1}
+.turn-cohost{background:#fdf4ff;border-left-color:#a855f7}
+.speaker-badge{display:inline-block;font-size:.6rem;font-weight:700;padding:.08rem .38rem;border-radius:.2rem;margin-right:.4rem;letter-spacing:.04em}
+.turn-host   .speaker-badge{background:#6366f1;color:#fff}
+.turn-cohost .speaker-badge{background:#a855f7;color:#fff}

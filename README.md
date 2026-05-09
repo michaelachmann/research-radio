@@ -89,7 +89,7 @@ This project is designed to work with [ToRead](https://github.com/fabiogiglietto
 
 ## Usage
 
-**Run locally:**
+**Run locally (automated pipeline):**
 ```bash
 python src/main.py
 ```
@@ -101,6 +101,24 @@ ENABLED_ANALYZERS=extraction,critical python src/main.py
 
 **Automated (GitHub Actions):**
 The workflow runs hourly, checking for new papers and generating episodes automatically.
+
+## Local Web Interfaces
+
+This fork adds two interactive local tools that share the same Claude + ElevenLabs infrastructure as the automated pipeline.
+
+### Script Lab — Paper → Podcast
+```bash
+python -m src.webui.podcast   # → http://localhost:5000
+```
+Upload a PDF, choose a prompt preset (Standard / Teaser / Deep Dive / Plain Language), optionally enable extended thinking, generate a two-host script, convert to audio via ElevenLabs, and copy ready-made cURL commands for manual API calls.
+
+### Audiobook Studio — EPUB → Audio
+```bash
+python -m src.webui.audiobook  # → http://localhost:5001
+```
+Upload an EPUB, browse and select chapters, generate narration scripts (with optional German translation presets), convert chapters to audio individually or batch-process all selected chapters in parallel.
+
+Both tools require the same `.env` variables as the pipeline (`ANTHROPIC_API_KEY`, `ELEVENLABS_API_KEY`, etc.).
 
 ## How It Works
 

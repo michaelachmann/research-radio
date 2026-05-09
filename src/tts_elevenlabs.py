@@ -16,6 +16,26 @@ from elevenlabs.types import DialogueInput
 from config import ELEVENLABS_API_KEY, ELEVENLABS_HOST_VOICE_ID, ELEVENLABS_COHOST_VOICE_ID
 
 
+def concat_mp3s(paths: list[str], output: str) -> bool:
+    """Concatenate MP3 files using ffmpeg concat demuxer. Returns True on success."""
+    list_file = output + ".filelist.txt"
+    try:
+        with open(list_file, "w") as f:
+            for p in paths:
+                f.write(f"file '{os.path.abspath(p)}'\n")
+        subprocess.run(
+            ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", list_file, "-c", "copy", output],
+            check=True,
+            capture_output=True,
+        )
+        return True
+    except Exception:
+        return False
+    finally:
+        if os.path.exists(list_file):
+            os.remove(list_file)
+
+
 class ElevenLabsTTS:
     """Text-to-Dialogue TTS for two-host podcast scripts."""
 
@@ -132,27 +152,7 @@ class ElevenLabsTTS:
                     os.remove(p)
 
     def _concat_mp3s(self, paths: list[str], output: str):
-        """Concatenate MP3 files using ffmpeg concat demuxer."""
-        list_file = output + ".filelist.txt"
-        try:
-            with open(list_file, "w") as f:
-                for p in paths:
-                    # ffmpeg requires absolute or properly escaped paths
-                    f.write(f"file '{os.path.abspath(p)}'\n")
-            subprocess.run(
-                [
-                    "ffmpeg", "-y",
-                    "-f", "concat", "-safe", "0",
-                    "-i", list_file,
-                    "-c", "copy",
-                    output,
-                ],
-                check=True,
-                capture_output=True,
-            )
-        finally:
-            if os.path.exists(list_file):
-                os.remove(list_file)
+        concat_mp3s(paths, output)
 
     def get_audio_duration(self, file_path: str) -> int:
         """Get duration of audio file in seconds using ffprobe."""

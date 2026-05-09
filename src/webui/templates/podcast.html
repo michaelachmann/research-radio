@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Research Radio — Script Lab</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='shared.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='podcast.css') }}">
+</head>
+<body>
+
+<header>
+  <span class="header-logo">🎙</span>
+  <h1>Research Radio</h1>
+  <span class="header-badge">Script Lab</span>
+</header>
+
+<div class="workspace">
+
+  <!-- Left panel: controls -->
+  <div class="panel panel-left">
+    <div class="panel-hd"><h2>Paper &amp; Settings</h2></div>
+    <div class="panel-bd">
+
+      <div>
+        <div class="section-label">PDF Upload</div>
+        <div class="upload-zone" id="drop-zone">
+          <p>Drop PDF here or click to browse</p>
+          <input type="file" id="pdf-input" accept=".pdf" style="display:none">
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Preset</div>
+        <select id="preset-select"></select>
+        <div class="preset-desc" id="preset-desc"></div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;gap:.3rem">
+        <div class="section-label">Prompt</div>
+        <textarea id="prompt-input" rows="6" placeholder="Podcast prompt…"></textarea>
+        <div class="hint">Tip: add [excited] [laughing] tags for ElevenLabs delivery</div>
+      </div>
+
+      <div class="model-row">
+        <div>
+          <div class="section-label">Model</div>
+          <select id="model-select"></select>
+        </div>
+        <div class="thinking-col">
+          <div class="section-label">Thinking</div>
+          <div class="toggle-wrap">
+            <input type="checkbox" id="thinking-toggle" class="toggle">
+            <span id="thinking-label">off</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-generate" id="generate-btn" disabled>Generate Script</button>
+
+    </div>
+  </div>
+
+  <!-- Middle panel: script output -->
+  <div class="panel panel-mid">
+    <div class="panel-hd">
+      <h2>Script <span class="pill pill-idle" id="status-pill">Idle</span></h2>
+      <div style="display:flex;gap:.4rem">
+        <button class="btn-sm" onclick="copyOutput()">Copy</button>
+      </div>
+    </div>
+
+    <div class="tab-bar">
+      <button class="tab-btn active" id="tab-script" onclick="switchTab('script')">Script</button>
+      <button class="tab-btn"        id="tab-raw"    onclick="switchTab('raw')">Raw</button>
+    </div>
+
+    <div id="script-view" style="flex:1;overflow-y:auto;padding:.7rem .85rem;display:flex;flex-direction:column;gap:.5rem">
+      <p class="script-empty">Upload a PDF and generate a script.</p>
+    </div>
+    <textarea id="output-area" style="display:none;flex:1;margin:.5rem;border-radius:.4rem" placeholder="Raw script text…" readonly></textarea>
+
+    <div style="padding:.35rem .85rem;border-top:1px solid #e2e8f0;font-size:.65rem;color:#94a3b8;text-align:right" id="output-meta"></div>
+  </div>
+
+  <!-- Right panel: audio + cURL -->
+  <div class="panel panel-right">
+    <div class="panel-hd"><h2>Audio &amp; cURL</h2></div>
+    <div class="panel-bd">
+
+      <div>
+        <button class="btn-audio" id="create-audio-btn">Convert to Audio</button>
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div class="section-label">Progress</div>
+        <span class="pill pill-idle" id="audio-pill">Idle</span>
+      </div>
+      <div class="audio-log" id="audio-log"></div>
+      <a class="download-link" id="audio-download" href="#" download style="display:none">⬇ Download</a>
+
+      <div class="curl-divider">cURL</div>
+      <div id="curl-box"><p id="curl-empty">Generate a script first to see cURL commands.</p></div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="statusbar" id="statusbar">Ready — upload a PDF to begin.</div>
+
+<script>
+const PROMPTS       = {{ prompts_json | safe }};
+const EL_CONFIG     = {{ el_config_json | safe }};
+const MODELS        = {{ models_json | safe }};
+const DEFAULT_MODEL = {{ default_model | tojson }};
+const CHARS_PER_CHUNK = 1800;
+</script>
+<script src="{{ url_for('static', filename='shared.js') }}"></script>
+<script src="{{ url_for('static', filename='podcast.js') }}"></script>
+</body>
+</html>
